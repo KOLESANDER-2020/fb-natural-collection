@@ -1,0 +1,109 @@
+.form_block {
+	background-image: url(../img/bg_form_block.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+
+	.container {
+		padding: 60px 0;
+	}
+
+	.form_block_title{
+		margin: 0 0 16px;
+	}
+
+	.form_block_description {
+		margin: 0 0 24px;
+		font-size: 16px;
+		line-height: 1.5;
+		color: var(--text-main-color);
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		max-width: 825px;
+		width: 100%;
+	}
+
+	.form_block_form{
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.form_block_button {
+		align-self: flex-start;
+	}
+
+	.form_block_input {
+		width: 100%;
+		max-width: 350px;
+		padding: 10px 16px;
+		background-color: var(--bg-white);
+		color: var(--text-main-color);
+		border: none;
+	}
+
+	.form_block_input:hover{
+		background-color: var(--bg-light-blue);
+	}
+
+	.form_block_input:hover::placeholder{
+		color: var(--text-main-color);
+	}
+
+	.form_block_input:active{
+		background-color: var(--bg-white);
+	}
+
+	.form_block_input:active::placeholder{
+		color: var(--text-main-color);
+	}
+
+	.form_block_input:focus{
+		outline: none; /* убираем стандартный outline */
+    box-shadow:
+        0 0 0 2px var(--btn-green),
+        0 0 0 3px var(--border-color-light-green);
+	}
+
+	.form-group {
+		position: relative;
+		display: block;
+	}
+
+
+/* Добавляем отступ для сообщений об ошибке */
+.form-group-name .pristine-error {
+	position: absolute;
+	top: -18px;
+	left: 30px;
+	color: var(--text-accent);
+	font-size: var(--fz-12);
+	font-weight: 400;
+	animation: pulse 1.5s infinite;
+}
+
+
+/* Добавляем отступ для сообщений об ошибке */
+.form-group-mail .pristine-error {
+	position: absolute;
+	top: -18px;
+	left: 30px;
+	color: var(--text-accent);
+	font-size: var(--fz-12);
+	font-weight: 400;
+	animation: pulse 1.5s infinite;
+}
+
+.form-group input{
+	color: var(--text-dark-blue);	
+}
+
+  .contact-form input:-webkit-autofill {
+	-webkit-text-fill-color: var(--text-dark-blue) !important;
+  }
+	
+	
+}
+
